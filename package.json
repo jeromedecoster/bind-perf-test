@@ -1,0 +1,22 @@
+{
+  "name": "bind-perf-test",
+  "version": "0.1.0",
+  "description": "bind operation performance tests",
+  "repository": "jeromedecoster/bind-perf-test",
+  "author": {
+    "name": "Jérôme Decoster",
+    "url": "jeromedecoster.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "budo src/index.js:bundle.js --dir src --host localhost --port 3000 --no-debug",
+    "dev": "budo src/index.js:bundle.js --dir src --host localhost --port 3000 --no-debug --live",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "budo": "^8.3.0"
+  },
+  "dependencies": {
+    "raf-funcs": "^0.4.0"
+  }
+}
